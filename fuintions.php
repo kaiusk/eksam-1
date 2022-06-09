@@ -19,4 +19,4 @@ add_action('after_setup_theme', 'post_setup');
 function my_style_enqueue_styles() {
     wp_enqueue_style('style', get_template_directory_uri() . '/assets/general.css');
 }
-add_action('wp_enqueue_scripts', 'my_style_enqueue_styles');
+add_action('wp_enqueue_scripts', 'my_style_enqueue_styles');<?php
