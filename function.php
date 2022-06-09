@@ -20,16 +20,3 @@ function my_style_enqueue_styles() {
     wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.css');
 }
 add_action('wp_enqueue_scripts', 'my_style_enqueue_styles');
-function create_copyright(): void {
-    $all_posts = get_posts(
-        'post_status=publish&order=ASC');
-    $first_post = $all_posts[0];
-    $first_date = $first_post->post_date_gmt;
-    _e('&copy;');
-    if (substr($first_date, 0, 4) == date('Y')) {
-        echo date('Y');
-    } else {
-        echo substr($first_date, 0, 4) . "-" . date('Y');
-    }
-    echo ' <strong>' . get_bloginfo('name') . '</strong> ';
-}
