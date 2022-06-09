@@ -1,33 +1,23 @@
-<?php
-/**
- * Header file for the Twenty Twenty WordPress default theme.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
- */
-
-?><!DOCTYPE html>
-
-<html class="no-js" <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<html lang="et">
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Veebiprogrammeeerimise eksam">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 <body>
 <header>
-    <?php wp_nav_menu(array(
-        'theme_location' => 'links-menu',
-        'menu_class' => 'myNavList'
-    ));
-?>
+    <!--nav>
+        <?php wp_nav_menu([
+        'menu' => 'primary',
+        'container_class' => 'navbar'
+    ]); ?>
+    </nav!-->
+    <h1><?php echo get_bloginfo('name'); ?></h1>
+    <?php echo get_bloginfo('description'); ?></h2
 </header>
 <main>
-    <section class="esimeneosa">
-        <h1><?php echo get_bloginfo("name"); ?></h1>
-
-

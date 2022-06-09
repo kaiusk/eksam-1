@@ -1,9 +1,6 @@
-</main>
 <footer>
-    <div class="footer">
-        <p>
-            &copy; Siiri Inno 2022
-        </p>
+    <div class="container">
+        <p class="text-center"><?php create_copyright(); ?></p>
     </div>
 </footer>
 </body>
