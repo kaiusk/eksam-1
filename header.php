@@ -11,13 +11,7 @@
 </head>
 <body>
 <header>
-    <!--nav>
-        <?php wp_nav_menu([
-        'menu' => 'primary',
-        'container_class' => 'navbar'
-    ]); ?>
-    </nav!-->
     <h1><?php echo get_bloginfo('name'); ?></h1>
-    <?php echo get_bloginfo('description'); ?></h2
+    <!--h2 class="text-primary"><?php echo get_bloginfo('description'); ?></h2!-->
 </header>
 <main>
